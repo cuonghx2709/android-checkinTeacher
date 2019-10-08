@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "443093125056",
+    "firebase_url": "https://teachercheckin-9c759.firebaseio.com",
+    "project_id": "teachercheckin-9c759",
+    "storage_bucket": "teachercheckin-9c759.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:443093125056:android:5b5fb46d649cf71d",
+        "android_client_info": {
+          "package_name": "com.cuonghx.teacher.teachercheckin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "443093125056-8mn018v5l75r5oql1bgfi7keladoqek8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cuonghx.teacher.teachercheckin",
+            "certificate_hash": "5deebcd15197fc4facb923e7df838fbf6475aeb9"
+          }
+        },
+        {
+          "client_id": "443093125056-9iqaucu8gt26eis7crjcrvaijkq99e7q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4n05CcWbUoztBGjpnyu-F5C7cuAgdAzs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "443093125056-9iqaucu8gt26eis7crjcrvaijkq99e7q.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "443093125056-fi4fpvjvl67gdbmdt0u1r5r1d14q4gkp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.cuonghx.checkinTeacher"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/ll_row_course"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="@dimen/dp_48"
+        android:layout_height="@dimen/dp_48"
+        android:padding="8dp"
+        android:src="@drawable/ic_assignment_black_24dp"/>
+
+    <RelativeLayout
+        android:layout_toRightOf="@id/iv"
+        android:id="@+id/lnl_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_it_course_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:textSize="@dimen/dp_16"
+            android:text="Cell Biology the quickest route for Protein Transport"
+            android:padding="8dp"
+            android:paddingVertical="4dp"/>
+
+        <TextView
+            android:layout_below="@id/tv_it_course_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:text="Code: "
+            android:id="@+id/tv_it_code"
+            android:textStyle="bold"
+            android:textSize="@dimen/dp_16"/>
+
+        <TextView
+            android:id="@+id/tv_it_course_code"
+            android:layout_toRightOf="@id/tv_it_code"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_it_course_name"
+            android:lines="1"
+            android:textColor="#818181"
+            android:ellipsize="end"
+            android:textSize="@dimen/dp_16"
+            android:text="ABCDEFGHJKLMN"
+            android:paddingHorizontal="8dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@id/lnl_name"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_height="40dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Điểm Danh"
+            app:strokeWidth="1sp"
+            app:cornerRadius="20dp"
+            app:backgroundTint="@android:color/transparent"
+            app:strokeColor="@color/blue"
+            android:textSize="12dp"
+            android:textColor="@color/blue"
+            android:id="@+id/bt_checkin_item"
+            android:layout_weight="1"
+            android:lines="1"
+            android:layout_marginHorizontal="4dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhắn tin"
+            android:lines="1"
+            android:layout_marginHorizontal="4dp"
+            android:textSize="12dp"
+            android:textColor="@color/blue"
+            android:id="@+id/bt_sendMessage_item"
+            android:layout_weight="1"
+            app:strokeWidth="1sp"
+            app:cornerRadius="20dp"
+            app:backgroundTint="@android:color/transparent"
+            app:strokeColor="@color/blue"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:lines="1"
+            android:layout_marginHorizontal="4dp"
+            android:textSize="12dp"
+            android:textColor="@color/blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/bt_tk_item"
+            android:text="T.Kê"
+            app:strokeWidth="1sp"
+            app:cornerRadius="20dp"
+            app:backgroundTint="@android:color/transparent"
+            app:strokeColor="@color/blue" />
+    </LinearLayout>
+
+</RelativeLayout>

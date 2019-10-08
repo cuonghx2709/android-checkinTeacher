@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="8dp"
+    android:layout_marginLeft="@dimen/dp_48">
+<RelativeLayout
+    android:id="@+id/rl_text_chat"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_bg"
+    android:paddingLeft="8dp"
+    android:paddingRight="12dp"
+    android:paddingTop="5dp"
+    android:layout_marginTop="2dp"
+    android:paddingBottom="5dp"
+    android:layout_alignParentEnd="true">
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="16:20, 27/09"
+        android:id="@+id/tv_date"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_below="@id/tv_date"
+        android:id="@+id/tv_text_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ececec"
+        android:text="AAAAAAAAAAAAAAAAAAAA"
+        />
+</RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/ll_row_course"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true">
+    <LinearLayout
+        android:id="@+id/lnl_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_it_course_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:lines="1"
+            android:ellipsize="end"
+            android:text="This is recycleviewTest"
+            android:padding="8dp"/>
+        <TextView
+            android:lines="1"
+            android:id="@+id/tv_it_course_code"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Code: 12346546"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/lnl_name"
+        android:id="@+id/lnl_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48">
+        <Button
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:id="@+id/bt_checkin_item"
+            android:text="@string/title_checkin_btn"
+            android:layout_weight="1"
+            android:lines="1"
+            android:layout_margin="2dp"
+            android:ellipsize="end"
+            android:textSize="12sp"
+            android:layout_width="fill_parent"
+            android:backgroundTint="@color/blue"
+            android:layout_height="wrap_content" />
+        <Button
+            android:backgroundTint="@color/blue"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:id="@+id/bt_sendMessage_item"
+            android:textSize="12sp"
+            android:layout_margin="2dp"
+            android:lines="1"
+            android:text="@string/title_send_message"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:backgroundTint="@color/blue"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:id="@+id/bt_tk_item"
+            android:textSize="12sp"
+            android:layout_margin="2dp"
+            android:lines="1"
+            android:text="T.kê"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

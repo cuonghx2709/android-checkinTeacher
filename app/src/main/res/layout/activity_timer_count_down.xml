@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cuonghx.teacher.teachercheckin.screens.timer.TimerCountDownActivity">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/dp_32"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_32"
+        android:paddingHorizontal="8dp"
+        android:text="Cơ sở dữ liệu jlkajlkfjalkjflkajlkfjakl"/>
+
+
+    <TextView
+        android:id="@+id/text_view_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_centerHorizontal="true"
+        android:text="00:00"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/tv_title_sv"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số sinh viên"
+        android:textSize="@dimen/dp_16"
+        android:layout_below="@id/text_view_countdown"/>
+
+    <TextView
+        android:id="@+id/tv_total_sv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="@dimen/dp_32"
+        android:textStyle="bold"
+        android:layout_below="@id/tv_title_sv"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_attend_title"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Đã điểm danh"
+        android:textSize="@dimen/dp_16"
+        android:layout_below="@id/tv_total_sv"/>
+
+    <TextView
+        android:id="@+id/tv_attend_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10"
+        android:textSize="@dimen/dp_32"
+        android:textStyle="bold"
+        android:layout_below="@id/tv_attend_title"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"/>
+
+
+</RelativeLayout>

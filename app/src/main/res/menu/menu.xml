@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_create"
+        android:title="Create Course"
+        android:showAsAction="always" />
+    <item
+        android:id="@+id/logout"
+        android:title="Log out"
+        android:showAsAction="always" />
+</menu>
