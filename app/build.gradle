@@ -58,7 +58,7 @@ dependencies {
     implementation 'com.google.android.material:material:1.0.0'
 
     //Facebook
-    implementation 'com.facebook.android:facebook-android-sdk:4.22.0'
+    implementation 'com.facebook.android:facebook-android-sdk:5.+'
 
 
 }

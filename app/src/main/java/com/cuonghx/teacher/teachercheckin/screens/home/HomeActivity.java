@@ -38,6 +38,11 @@ import com.cuonghx.teacher.teachercheckin.data.source.remote.api.response.BaseRe
 import com.cuonghx.teacher.teachercheckin.screens.BaseActivity;
 import com.cuonghx.teacher.teachercheckin.screens.BaseRecyclerViewAdapter;
 import com.cuonghx.teacher.teachercheckin.screens.adapter.CourseAdapter;
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 
 import java.net.HttpURLConnection;
@@ -331,7 +336,20 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener, 
         //noinspection SimplifiableIfStatement
         if (id == R.id.logout) {
             Log.d("cuonghx", "onOptionsItemSelected: logout" );
+            GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                    .requestEmail()
+                    .build();
+
+            final GoogleSignInClient mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
+            mGoogleSignInClient.revokeAccess()
+                    .addOnCompleteListener(this, new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+                            // ...
+                        }
+                    });
             FirebaseAuth.getInstance().signOut();
+
             super.onBackPressed();
             return true;
         }else if (id == R.id.menu_create){
