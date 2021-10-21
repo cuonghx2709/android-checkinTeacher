@@ -9,7 +9,4 @@ pipeline {
     }
 
   }
-  environment {
-    ANDROID_HOME = '~/Library/Android/sdk/'
-  }
 }
